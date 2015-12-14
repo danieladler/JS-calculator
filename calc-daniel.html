@@ -5,30 +5,34 @@
     <script src="/calc-daniel.js"></script>
   </head>
   <body>
-    <h2>input X</h2>
-    <form id="input-x">
+    <h1 id="test"></h1>
+    <h3>Answer bar:</h3>
+      <div id="answer">
+      </div>
 
-    </form>
-    <br>
-    <br>
-    <h2>select dropdown for operator</h2>
-    <select id="operator">
+    <h4>input X</h4>
+      <form id="input-x" action="">
+        <input type="text">
+      </form>
 
-    </select>
-    <br>
-    <br>
-    <h2>input Y</h2>
-    <form id="input-y">
+    <h4>~ select dropdown for operator ~</h4>
+      <select id="operator">
+        <option> + </option>
+        <option> [select] </option>
+        <option> - </option>
+        <option> * </option>
+        <option> / </option>
+        <option> % </option>
+      </select>
+      <br>
 
-    </form>
-    <br>
-    <br>
-    <h2>Submit Button</h2>
-    <button class="btn btn-xl btn-success">Submit</button>
+    <h4>input Y</h4>
+      <form id="input-y" action=" ">
+        <input type="text">
+      </form>
 
-    <h2>CE <button name="button"></button></h2>
-    <div id="CE">
+    <button id="submit">Do Math</button>
 
-    </div>
+    <button name="button">CE</button>
   </body>
 </html>
