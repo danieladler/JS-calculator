@@ -2,36 +2,46 @@
   <head>
     <title>JS Calc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/master.css" media="screen" title="no title" charset="utf-8">
     <script src="/calc-daniel.js"></script>
   </head>
   <body>
-    <h1 id="test"></h1>
-      <div id="answer">
+    <div class="container">
+      <div class="row">
+        <div class="answer-container">
+          <div id="answer"></div>
+        </div>
       </div>
 
-    <h4>input X</h4>
-      <form action="">
-        <input id="inputX" type="text">
-      </form>
+      <div class="row input-container">
+        <div class ="col-lg-4 input-X-container">
+          <form action="" class="input-X-form">
+            <input id="inputX" type="text" class="form-control">
+          </form>
+        </div>
 
-    <h4>~ select dropdown for operator ~</h4>
-      <select id="operator">
-        <option> [select] </option>
-        <option> + </option>
-        <option> - </option>
-        <option> * </option>
-        <option> / </option>
-        <option> % </option>
-      </select>
-      <br>
+        <div class="col-lg-4 operator-container">
+          <select id="operator" class="form-control">
+            <option> [select] </option>
+            <option> + </option>
+            <option> - </option>
+            <option> * </option>
+            <option> / </option>
+            <option> % </option>
+          </select>
+        </div>
 
-    <h4>input Y</h4>
-      <form  action="">
-        <input id="inputY" type="text">
-      </form>
+        <form  action="" class="col-lg-4 input-Y-form">
+          <input id="inputY" type="text" class="form-control">
+        </form>
+      </div>
 
-    <button id="submit">Do Math</button>
+      <div class="row">
+        <button id="submit" class="button btn-success btn-xl">Do Math</button>
 
-    <button name="button">CE</button>
+        <button id="clear" class="button btn-warning btn-xl">CE</button>
+      </div>
+    </div>
   </body>
 </html>

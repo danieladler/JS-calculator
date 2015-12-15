@@ -1,0 +1,15 @@
+body {
+  font-family: "Helvetica Neue";
+  background-color: rgba(43, 64, 80, 0.65);
+}
+
+.answer-container {
+  margin: 20px 0;
+  border: 1px solid black;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
