@@ -1,11 +1,12 @@
 window.onload = function () {
 
   // styling
-  document.body.style.backgroundColor = "rgba(10, 44, 66, 0.66)"
+  document.body.style.backgroundColor = "rgba(100, 163, 203, 0.35)"
   document.body.style.width = "800px"
   document.body.style.minWidth = "600px"
   document.body.style.maxWidth = "800px"
   document.body.style.margin = "0 auto"
+  document.body.style.fontFamily = "Helvetica Neue"
 
   // set up page elements
   var answer = document.getElementById("answer");
@@ -15,20 +16,28 @@ window.onload = function () {
   answer.style.paddingLeft = "10px";
   answer.style.fontSize    = "40px";
 
-  // make elements available for math
-  var inputX = document.getElementById("input-x").innerHTML;
-  var op     = document.getElementById("operator").innerHTML;
-  var inputY = document.getElementById("input-y").innerHTML;
-  var array  = []
+  // events
 
-  // math functions
-    // TEST INPUTS:
-    inputX = 50
-    // console.log(inputX)
-    op = "+"
-    inputY = 49
-    // console.log(inputY)
+    // click submit button -> do math
+      var submit = document.getElementById("submit");
+      submit.addEventListener("click", function () {
+        var inputX = document.getElementById("inputX").value;
+        var op     = document.getElementById("operator").value;
+        var inputY = document.getElementById("inputY").value;
+        console.log(inputX);
+        console.log(inputY);
 
-  array.push(inputX, op, inputY);
-  answer.innerHTML = eval(array[0] + array[1] + array[2]);
+        var array  = [ ]
+        array.push(inputX, op, inputY);
+        answer.innerHTML = eval(array[0] + array[1] + array[2]);
+      });
+
+      // IN PROGRESS: put math into own function; call function on click event
+      // function doCalcMath() {
+      //   array.push(inputX, op, inputY);
+      //   answer.innerHTML = eval(array[0] + array[1] + array[2]);
+      // // }
+
+    // click CE button -> clear all fields
+
 }
