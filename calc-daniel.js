@@ -15,6 +15,8 @@ window.onload = function () {
         var array  = [ ]
         array.push(inputX, op, inputY);
         answer.innerHTML = eval(array[0] + array[1] + array[2]);
+
+        document.getElementById("inputX").value = answer.innerHTML
       });
 
       // IN PROGRESS: put math into own function; call function on click event
