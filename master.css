@@ -13,3 +13,7 @@ body {
 .input-container {
   margin-bottom: 10px;
 }
+
+button {
+  width: 100%;
+}

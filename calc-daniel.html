@@ -9,19 +9,19 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="answer-container">
+        <div class="answer-container col-lg-6 col-lg-push-3">
           <div id="answer"></div>
         </div>
       </div>
 
-      <div class="row input-container">
-        <div class ="col-lg-4 input-X-container">
+      <div class="row">
+        <div class ="input-container col-lg-2 col-lg-push-3 input-X-container">
           <form action="" class="input-X-form">
             <input id="inputX" type="text" class="form-control">
           </form>
         </div>
 
-        <div class="col-lg-4 operator-container">
+        <div class="col-lg-2 col-lg-push-3 operator-container">
           <select id="operator" class="form-control">
             <option> [select] </option>
             <option> + </option>
@@ -32,15 +32,19 @@
           </select>
         </div>
 
-        <form  action="" class="col-lg-4 input-Y-form">
+        <form  action="" class="col-lg-2 col-lg-push-3 input-Y-form">
           <input id="inputY" type="text" class="form-control">
         </form>
       </div>
 
       <div class="row">
-        <button id="submit" class="button btn-success btn-xl">Do Math</button>
+        <div class="button-container col-lg-3 col-lg-push-3">
+          <button id="submit" class="btn btn-success btn-xl">Do Math</button>
+        </div>
 
-        <button id="clear" class="button btn-warning btn-xl">CE</button>
+        <div class="button-container col-lg-3 col-lg-push-3">
+          <button id="clear" class="btn btn-warning btn-xl">CE</button>
+        </div>
       </div>
     </div>
   </body>
