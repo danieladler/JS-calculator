@@ -29,8 +29,9 @@ window.onload = function () {
         answer.innerHTML = "0";
         var numberFields = document.getElementsByClassName("number");
         var i;
-        for (i = 0; i <= numberFields.length; i++) {
-          numberFields[i].value = 0
-        }
+        for (i = 0; i < numberFields.length; i++) {
+          numberFields[i].value = ""
+        };
+        var inputX = document.getElementById("inputX").focus();
       });
 }
