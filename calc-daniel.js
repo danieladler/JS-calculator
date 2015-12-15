@@ -6,25 +6,23 @@ window.onload = function () {
 
   // events
     // click submit button -> do math
-      // var submit = document.getElementById("submit");
+      var submit = document.getElementById("submit");
+
+      function doMath(inputX,op,inputY) {
+       var array = [inputX,op,inputY];
+       var result = eval(array[0] + array[1] + array[2]);
+       return result;
+      }
+
+      var inputX = document.getElementById("inputX");
+      var op     = document.getElementById("operator");
+      var inputY = document.getElementById("inputY");
+
       submit.addEventListener("click", function (event) {
         event.preventDefault();
-        var inputX = document.getElementById("inputX").value;
-        var op     = document.getElementById("operator").value;
-        var inputY = document.getElementById("inputY").value;
-
-        var array  = [ ]
-        array.push(inputX, op, inputY);
-        answer.innerHTML = eval(array[0] + array[1] + array[2]);
-
-        document.getElementById("inputX").value = answer.innerHTML
+        answer.innerHTML = doMath(inputX.value,op.value,inputY.value);
+        inputX.value = answer.innerHTML;
       });
-
-      // IN PROGRESS: put math into own function; call function on click event
-      // function doMath() {
-      //   array.push(inputX, op, inputY);
-      //   answer.innerHTML = eval(array[0] + array[1] + array[2]);
-      // // }
 
     // click CE button -> clear all fields
       var CE           = document.getElementById("clear");
