@@ -4,17 +4,13 @@ window.onload = function () {
   var answer = document.getElementById("answer");
   answer.innerHTML = "0";
 
-
   // events
-
     // click submit button -> do math
       var submit = document.getElementById("submit");
       submit.addEventListener("click", function () {
         var inputX = document.getElementById("inputX").value;
         var op     = document.getElementById("operator").value;
         var inputY = document.getElementById("inputY").value;
-        // console.log(inputX);
-        // console.log(inputY);
 
         var array  = [ ]
         array.push(inputX, op, inputY);
@@ -28,5 +24,13 @@ window.onload = function () {
       // // }
 
     // click CE button -> clear all fields
-
+      var CE           = document.getElementById("clear");
+      CE.addEventListener("click", function() {
+        answer.innerHTML = "0";
+        var numberFields = document.getElementsByClassName("number");
+        var i;
+        for (i = 0; i <= numberFields.length; i++) {
+          numberFields[i].value = 0
+        }
+      });
 }
