@@ -9,45 +9,47 @@
   </head>
   <body>
     <div class="container">
-      <div class="graphic-container col-lg-6 col-lg-push-3">
-        <div class="row answer-row">
-          <div class="answer-container col-lg-10 col-lg-push-1">
-            <div id="answer"></div>
+      <form action="">
+        <div class="graphic-container col-lg-6 col-lg-push-3">
+          <div class="row answer-row">
+            <div class="answer-container col-lg-10 col-lg-push-1">
+              <div id="answer"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class ="input-container col-lg-4 col-lg-push-1 input-X-container">
+              <div class="input-X-form">
+                <input id="inputX" type="text" class="form-control number">
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-lg-push-1 operator-container">
+              <select id="operator" class="form-control">
+                <option> + </option>
+                <option> - </option>
+                <option> * </option>
+                <option> / </option>
+                <option> % </option>
+              </select>
+            </div>
+
+            <div class="col-lg-4 col-lg-push-1 input-Y-form">
+              <input id="inputY" type="text" class="form-control number">
+            </div>
+          </div>
+
+          <div class="row button-row">
+            <div class="button-container col-lg-5 col-lg-push-1">
+              <button id="submit" class="btn btn-success btn-xl">Do Math</button>
+            </div>
+
+            <div class="button-container col-lg-5 col-lg-push-1">
+              <button id="clear" class="btn btn-danger btn-xl">CE</button>
+            </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class ="input-container col-lg-4 col-lg-push-1 input-X-container">
-            <form action="" class="input-X-form">
-              <input id="inputX" type="text" class="form-control number">
-            </form>
-          </div>
-
-          <div class="col-lg-2 col-lg-push-1 operator-container">
-            <select id="operator" class="form-control operator">
-              <option> + </option>
-              <option> - </option>
-              <option> * </option>
-              <option> / </option>
-              <option> % </option>
-            </select>
-          </div>
-
-          <form  action="" class="col-lg-4 col-lg-push-1 input-Y-form">
-            <input id="inputY" type="text" class="form-control number">
-          </form>
-        </div>
-
-        <div class="row">
-          <div class="button-container col-lg-5 col-lg-push-1">
-            <button id="submit" class="btn btn-success btn-xl">Do Math</button>
-          </div>
-
-          <div class="button-container col-lg-5 col-lg-push-1">
-            <button id="clear" class="btn btn-danger btn-xl">CE</button>
-          </div>
-        </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>

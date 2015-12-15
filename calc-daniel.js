@@ -6,8 +6,9 @@ window.onload = function () {
 
   // events
     // click submit button -> do math
-      var submit = document.getElementById("submit");
-      submit.addEventListener("click", function () {
+      // var submit = document.getElementById("submit");
+      submit.addEventListener("click", function (event) {
+        event.preventDefault();
         var inputX = document.getElementById("inputX").value;
         var op     = document.getElementById("operator").value;
         var inputY = document.getElementById("inputY").value;
