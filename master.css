@@ -4,27 +4,45 @@
 }
 
 body {
-  background-color: rgba(43, 64, 80, 0.65);
+  background-color: rgba(112, 120, 136, 0.73);
+  /*background-image: url("/number-bkgd.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255);*/
+}
+
+.graphic-container {
+  background-color: rgb(43, 64, 80);
+  margin: 20px 0;
+  border: 4px solid black;
+  border-radius: 10px;
+  min-height: 550px;
+}
+
+.row {
+  margin: 0 0;
 }
 
 .answer-container {
   margin: 20px 0;
-  border: 2px solid black;
+  border: 3px solid black;
   font-size: 82px;
   font-family: "Calculator";
   font-weight: 500;
-}
-
-.input-container {
-  margin-bottom: 10px;
+  background-color: rgba(169, 199, 161, 0.40);
 }
 
 .form-control {
   height: 48px;
   font-size: 24px;
+  margin: 10px 0;
 }
 
 .btn {
   width: 100%;
   font-size: 24px;
+}
+
+.button-container {
+  margin-bottom: 20px;
 }
