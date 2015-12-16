@@ -4,18 +4,18 @@
 }
 
 body {
-  background-color: rgba(112, 120, 136, 0.73);
-  /*background-image: url("/number-bkgd.png");
+  /*background-color: rgba(112, 120, 136, 0.73);*/
+  background-image: url("/number-bkgd.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(255, 255, 255);*/
+  background-color: rgba(255, 255, 255);
 }
 
 .graphic-container {
-  background-color: rgb(43, 64, 80);
+  background-color: rgb(149, 149, 149);
   margin: 20px 0;
   border: 4px solid black;
-  border-radius: 10px;
+  border-radius: 8px;
   min-height: 550px;
 }
 
@@ -26,7 +26,8 @@ body {
 .answer-container {
   margin: 20px 0;
   border: 3px solid black;
-  font-size: 82px;
+  border-radius: 5px;
+  font-size: 80px;
   font-family: "Calculator";
   font-weight: 500;
   background-color: rgba(169, 199, 161, 0.40);
@@ -34,7 +35,7 @@ body {
 
 .form-control {
   height: 48px;
-  font-size: 24px;
+  font-size: 30px;
   margin: 10px 0;
 }
 
@@ -49,4 +50,12 @@ body {
 
 .button-container {
   margin-bottom: 20px;
+}
+
+.digits-row {
+  /*border: 1px solid red;*/
+}
+
+.digit-buttons {
+  border: 1px solid red;
 }
